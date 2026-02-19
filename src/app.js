@@ -17,6 +17,10 @@ app.use(cookieParser())   //cookieParser() is used to parse cookies from the inc
 
 
 
+// routes import
+import userRouter from './routes/user.routes.js'
 
+//routes declaration
+app.use("/api/v1/users", userRouter)
 
 export default app;
